@@ -40,7 +40,7 @@ class LossHistory(Callback):
         margin = abs(curr_k - self.prev_k)
         if epoch >= int(0.5 * epochs) and (val_loss > best) and (margin <= thr):
             # self.BETA = curr_k * self.BETA
-            settings.BETA = curr_k * self.BETA
+            settings.BETA = self.BETA = curr_k * self.BETA
 
             # L1 / L2 loss functions (comment/uncomment accordingly)
             # Loss function L1
