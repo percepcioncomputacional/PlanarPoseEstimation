@@ -73,7 +73,7 @@ def generator(data, batch_size):
 
     # Generate batches
     # Create zero-valued arrays to contain batch of features and labels
-    batch_images = np.zeros((settings.BATCH_SIZE, settings.img_height, settings.img_width, settings.img_channels),
+    batch_images = np.zeros((batch_size, settings.img_height, settings.img_width, settings.img_channels),
                             dtype=np.float32)
     batch_poses = np.zeros((batch_size, 7), dtype=np.float32)
 
