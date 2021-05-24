@@ -22,6 +22,7 @@ BETA = 1.
 BETA_list = []
 prev_k = 1.
 thr = 0.02
+epochs_proportion = 0.5
 
 # Data / results
 mean_array = np.zeros((img_height, img_width, img_channels), dtype=np.float32)
