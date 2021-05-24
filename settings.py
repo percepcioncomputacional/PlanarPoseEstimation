@@ -32,6 +32,6 @@ checkpoint_weights = 'E1_checkpoint_weights.h5'  # rename accordingly (experimen
 trained_weights = 'E1_trained_weights.h5'  # rename accordingly (experiment)
 best_weights = 'E1_best_weights.h5'  # rename accordingly (experiment)
 training_loss_file = 'E1_training_loss.csv'  # rename accordingly (experiment)
-validation_loss_file = 'E1_training_loss.csv'  # rename accordingly (experiment)
+validation_loss_file = 'E1_validation_loss.csv'  # rename accordingly (experiment)
 error_test_file = 'E1_error_test.csv' # rename accordingly (experiment)
 BETA_file = 'E1_BETAS.csv'  # rename accordingly (experiment)
