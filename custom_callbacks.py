@@ -38,7 +38,7 @@ class LossHistory(Callback):
 
         optimizer = self.model.optimizer
         margin = abs(curr_k - self.prev_k)
-        if epoch >= int(0.5 * epochs) and (val_loss > best) and (margin <= thr):
+        if epoch >= int(settings.epochs_proportion * epochs) and (val_loss > best) and (margin <= thr):
             # self.BETA = curr_k * self.BETA
             settings.BETA = self.BETA = curr_k * self.BETA
 
